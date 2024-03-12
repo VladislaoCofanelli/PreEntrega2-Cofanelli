@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: space-between;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    border: solid 3px;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+p{
+    text-shadow: 0px 3px rgba(255, 255, 255, 0.315); 
+}
+
+#Linear-gradient-to-righ{
+    background-image: linear-gradient(to right, gold, blue);
+}
+#Linear-gradient-to-left{
+    background-image: linear-gradient(to left, gold, blue);
+}
+#Linear-gradient-to-bottom{
+    background-image: linear-gradient(to bottom, gold, blue);
+}
+#Linear-gradient-to-top{
+    background-image: linear-gradient(to top, gold, blue);
+}
+#Radial-gradient-circle{
+    background-image: radial-gradient(circle, gold, blue);
+}
+#Radial-gradient-ellipse{
+    background-image: radial-gradient(ellipse 175px 100px, gold, blue);
+}
+#Traslate{
+    transform: translate(10px, 15px);
+}
+#Rotate+{
+    transform: rotate(5deg);
+}
+#Rotate-{
+    transform: rotate(-5deg);
+}
+#RotateX{
+    transform: rotateX(45deg);
+}
+#RotateY{
+    transform: rotateY(45deg);
+}
+#RotateZ{
+    transform: rotateZ(5deg);
+}
+#Scale{
+    transform: scale(2);
+}
+#Skew{
+    transform: skew(20deg, 10deg);
+}
+#SkewX{
+    transform: skewX(10deg);
+}
+#SkewY{
+    transform: skewY(10deg);
+}
+#Transition-height{
+    height: 105px;
+    transition: 2s;
+}
+#Transition-height:hover{
+    height: 200px;
+}
+#Transition-height-width{
+    height: 105px;
+    transition: height 2s, width 1s;
+}
+#Transition-height-width:hover{
+    height: 200px;
+    width: 250px;
+}
+#Color{
+    transition: all 2s;
+}
+#Color:hover{
+    background-color: gold;
+}
+#Transform-SkewY{
+    background-color: rgba(255, 0, 0, 0.0.9);
+}
+#Transform-SkewY:hover{
+    padding: 20px;
+    transform: skewY(25deg);
+}
+
+@keyframes Efect{
+    0%{width: 100px;}
+    10%{width: 50px;}
+    25%{width: 300px;}
+    50%{width: 200px; background-color: red;}
+    75%{width: 300px;}
+    100%{width: 100px; background-color: green;}
+}
+#Keyframes{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: Efect;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
