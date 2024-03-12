@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Quicksand" ;
-    src: url(./Font/Quicksand-VariableFont_wght.ttf);
+    src: url(Font/Quicksand-VariableFont_wght.ttf);
 }
 *{
     margin: 0;
@@ -59,7 +59,7 @@ section{
 
 .promociones{
     color: rgba(255, 255, 255, 0);
-    background-image: url(/Multimedia/CyberMonday.jpg);
+    background-image: url(Multimedia/CyberMonday.jpg);
     background-size: 100%;
     height: 100vh;
     background-position: center;
